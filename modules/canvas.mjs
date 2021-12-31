@@ -23,6 +23,7 @@ class Canvas {
     }
 
     draw(graph) {
+        this.ctx.clearRect(0, 0, this.width, this.height);
         for (const vertex of graph.vertices.values()) {
             this.ctx.beginPath();
             this.ctx.arc(vertex.x * this.width, vertex.y * this.height, 4, degToRad(0), degToRad(360), false);

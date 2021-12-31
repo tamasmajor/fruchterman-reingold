@@ -1,4 +1,5 @@
-export { Verticle } from "./verticle.mjs";
+import { Verticle } from "./verticle.mjs";
+export { Verticle };
 import { Edge } from "./edge.mjs";
 export { Edge };
 
@@ -9,8 +10,8 @@ class Graph {
         this.edges = [];
     }
 
-    addVerticle(verticle) {
-        this.vertices.set(verticle.id, verticle);
+    addVerticle(id, x, y) {
+        this.vertices.set(id, new Verticle(id, x, y));
     }
 
     addEdge(v, u) {
