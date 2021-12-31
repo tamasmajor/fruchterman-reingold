@@ -1,4 +1,4 @@
-import { Graph, Verticle } from "./graph/graph.mjs";
+import { Graph } from "./graph.mjs";
 
 class GraphGenerator {
 

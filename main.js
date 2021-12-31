@@ -1,5 +1,5 @@
 import { Canvas } from "./modules/canvas.mjs";
-import { GraphGenerator } from "./modules/graph-generator.mjs";
+import { GraphGenerator } from "./modules/graph/graph-generator.mjs";
 
 document.addEventListener('DOMContentLoaded', function(event) {
     // add the canvas
