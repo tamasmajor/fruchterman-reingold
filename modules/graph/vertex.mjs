@@ -1,5 +1,5 @@
-class Verticle {
-    
+class Vertex {
+
     constructor(id, x, y) {
         this.id = id;
         this.x = x;
@@ -8,4 +8,4 @@ class Verticle {
 
 }
 
-export { Verticle };
+export { Vertex };

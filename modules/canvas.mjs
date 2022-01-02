@@ -37,6 +37,10 @@ class Canvas {
         });
     }
 
+    aspectRatio() {
+      return this.width / this.height;
+    }
+
 }
 
 export { Canvas };
