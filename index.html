@@ -5,14 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Fruchterman-Reingold demo</title>
-        <style>
-            canvas {
-              border: 1px solid black;
-            }
-          </style>
+        <link rel="stylesheet" href="style.css">
         <script type="module" src="main.js"></script>
     </head>
     <body>
-        
+      <div class="header">
+        <span>Generate complete grapth with</span>
+        <input class="vertices-number" type="number" value="8">
+        <span>vertices</span>
+        <button class="generate-btn">Generate</button>
+        <button class="animate-btn" disabled>Animate</button>
+      </div>
     </body>
 </html>

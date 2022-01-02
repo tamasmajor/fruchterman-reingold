@@ -1,0 +1,26 @@
+body {
+  background: #121212;
+  color: white;
+  padding: 24px;
+}
+
+div.header {
+  margin-bottom: 24px;
+}
+
+canvas {
+  background: #252525;
+  border: 1px solid #222222;
+}
+
+input.vertices-number {
+  width: 32px;
+}
+
+button {
+  background: #03DAC6;
+  border: 0;
+  height: 24px;
+  padding: 4px 8px 4px 8px;
+  border-radius: 4px;
+}

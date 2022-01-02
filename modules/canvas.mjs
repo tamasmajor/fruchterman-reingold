@@ -23,18 +23,20 @@ class Canvas {
     }
 
     draw(graph) {
+        this.ctx.fillStyle = "#03DAC6";
+        this.ctx.strokeStyle = "#00695C";
         this.ctx.clearRect(0, 0, this.width, this.height);
-        for (const vertex of graph.vertices.values()) {
-            this.ctx.beginPath();
-            this.ctx.arc(vertex.x * this.width, vertex.y * this.height, 4, degToRad(0), degToRad(360), false);
-            this.ctx.fill();
-        }
         graph.edges.forEach(edge => {
             this.ctx.beginPath();
             this.ctx.moveTo(edge.v.x * this.width, edge.v.y * this.height);
             this.ctx.lineTo(edge.u.x * this.width, edge.u.y * this.height);
             this.ctx.stroke();
         });
+        for (const vertex of graph.vertices.values()) {
+            this.ctx.beginPath();
+            this.ctx.arc(vertex.x * this.width, vertex.y * this.height, 6, degToRad(0), degToRad(360), false);
+            this.ctx.fill();
+        }
     }
 
     aspectRatio() {
